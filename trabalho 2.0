@@ -1,0 +1,153 @@
+//ex1
+let calsius = 30;
+let fa = celsius * 1.8 + 32;
+
+console.log(`${celsius}°${fa.toFixed(1)}°F,`);
+
+//ex2
+const base = 10;
+const altura = 5;
+const area = base * altura;
+const perimetro = (base * 2) + (altura * 2);
+
+console.log(`area do retangulo: ${area}`);
+console.log(`perimetro do retangulo:${perimetro}`);
+
+//ex3
+let numero = 10;
+let resultado = (numero % 2 ==0)? "par" : "impar";
+
+console.log(resultado);
+
+//ex4
+for(let i;i <= 7; i++){
+    let andar = ""
+    for(let j = 0; j<i; j++){
+        andar += "*"
+    }
+    console.log(andar)
+}
+
+//ex5
+for(let i = 1; i <= 100; i++){
+    let num = `${i}`
+    if(i % 3 == 0){
+        num += "Fizz"
+    }
+    if (i % 5 == 0){
+        num +=  "Buzz"
+    }
+    console.log(num)
+}
+
+//ex6
+let input = require("rediline-sync")
+let.numero = read.question ("numero")
+for(let i = num; i > 0; i++){
+    console.log(1)
+}
+console.log("fim")
+
+//ex7
+let soma = 0
+for(let i = 1; i <= 50; i++){
+    soma+= i
+}
+console.log(`soma: ${soma}`)
+
+//ex9
+let input = require("rediline-sync")
+var min = (n1, n2) => {
+    if(n1 < n2){
+        return n1
+    }
+    return n2
+}
+
+//ex10
+function contarletra(texto, letra){
+    let qntd = 0
+    for(let i = 0; i < texto.length; i++){
+        if(texto[i] == letra){
+            qntd ++
+        }
+    }
+    return qntd
+}
+
+let texto = "arroz"
+let letra = "i"
+console.log(`texto: ${text} letra: ${contarletra}`)
+
+//ex 11
+let input = require("readline-sync")
+function podevotar(idade) {
+    if (idade >= 16) {
+        return true
+    }
+    return false
+}
+
+let idade = input.questionint("idade:")
+if (pode votar(idade)){
+    console.log ("pode votar")
+} else {
+    console.log("nao pode votar")
+}
+
+//ex 12
+let calcular = (a, b, operacao) => operacao(a,b);
+let soma = (a, b) => a + b;
+let subtrair = (a, b) => a - b;
+let multiplicar = (a, b) => a * b;
+
+console.log(calcular(10, 5, soma));
+console.log(calcular(10, 5, subtrair));
+console.log(calcular(10, 5, multiplicar));
+
+let divisao = calcular ((a, b) => a / b);
+console.log(divisao);
+
+//ex 13
+function ranger(inicio,fim){
+    let array = [];
+    for (let i = inicio; i <= fim; i ++){
+        array.push(i);
+    }
+    return array;
+}
+    function somar(array){
+        let soma = 0;
+        for{let i = 0; i < array.lenght; i++){
+            soma += array [i];
+        }
+        return soma;
+    }
+    const numeros = ranger(1, 10)
+    const resultado = somar(numero);
+    console.log(resultado);
+    
+//ex 14
+function reverter (array) {
+    let reverso = [];
+    let tamanho = array.legth;
+    for (let i = tamanho; i => tamanho; i--){
+        reverso.push (array[i]);
+    }
+    return reverso;
+}
+console.log(reverter([1, 2, 3, 4, 5, 6]))
+
+//15
+let produtos = [
+    {id: 1, nome: "tchau", preco:10}
+    {id: 2, nome: "bom dia", preco:20}
+    {id: 3, nome: "oi", preco:30}
+    {id: 4, nome: "ola", preco:40}
+    {id: 5, nome: "pudim", preco:50}
+    ]
+    console.log(produtos.find(e =>(return e.id == "3")));
+    console.log(produtos.find(e => {return e.preco=>100}));
+    console.log(produtos.map(e => {return e.nome}));
+    produtos.foreach(e => {console.log ('produtos: $ {e.nome'} preco: ${e.preco})})
+    
